@@ -1,3 +1,5 @@
+package JavaDirTree.src;
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -14,7 +16,7 @@ public class DirTree {
         for (int i = 1; i < levelCount - 1; i++) {
             thisLine.append(" |");
         }
-        thisLine.append("--" + str);
+        thisLine.append("--").append(str);
         System.out.println(thisLine);
     }
 
@@ -26,6 +28,7 @@ public class DirTree {
         File currentFile = new File(fPath);
         if (currentFile.isDirectory()) {
             String[] childrenFileNameLists = currentFile.list();
+            assert childrenFileNameLists != null;
             if (childrenFileNameLists.length > 0) {
                 levelCount++;
                 for (String childrenFileName : childrenFileNameLists) {
@@ -36,13 +39,9 @@ public class DirTree {
                     }
                 }
                 levelCount--;
-                return;
-            } else {
-                return;
             }
         } else {
             System.out.println("不是目录");
-            return;
         }
     }
 

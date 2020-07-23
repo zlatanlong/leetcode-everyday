@@ -2,7 +2,7 @@ package m62;
 
 import java.util.ArrayList;
 
-public class Solution {
+public class Solution62 {
     /**
      * 链表解法 时间复杂度O(n^2)
      * @param n
@@ -24,7 +24,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution62 solution = new Solution62();
         System.out.println(solution.lastRemaining(7,3));
     }
 
