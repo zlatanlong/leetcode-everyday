@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - t1544",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.t1544",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - t1560",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.t1560",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    }
+  ]
+}
