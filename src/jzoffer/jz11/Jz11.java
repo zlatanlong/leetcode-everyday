@@ -1,4 +1,4 @@
-package jz11;
+package jzoffer.jz11;
 
 public class Jz11 {
     public int minArray(int[] numbers) {
