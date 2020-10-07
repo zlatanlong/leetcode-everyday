@@ -2,6 +2,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - T332",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.T332",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - T1449",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.T1449",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - T1451",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.T1451",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - T1471",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.T1471",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - T1486",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.T1486",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - T1493",
+      "request": "launch",
+      "mainClass": "JavaDevelopmentClassTest.T1493",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - t1544",
       "request": "launch",
       "mainClass": "JavaDevelopmentClassTest.t1544",
