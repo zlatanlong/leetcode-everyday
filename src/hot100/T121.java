@@ -8,24 +8,24 @@ package hot100;
 public class T121 {
 
     public int maxProfit(int[] prices) {
-        int l = 0;
-        int r = prices.length - 1;
-        int max = 0, min = Integer.MAX_VALUE;
-        while (l < r) {
-            if (prices[l] < min) {
-                min = prices[l];
-            }
-            if (prices[r] > max) {
-                max = prices[r];
-            }
-            l++;
-            r--;
+        if (prices.length==0) {
+            return 0;
         }
-        return max - min > 0 ? max - min : 0;
+        int[] dp = new int[prices.length];
+        dp[0] = 0;
+        int min = prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            dp[i] = Math.max(dp[i - 1], prices[i] - min);
+            if (prices[i] < min) {
+                min = prices[i];
+            }
+        }
+
+        return dp[prices.length-1];
 
     }
 
     public static void main(String[] args) {
-        new T121().maxProfit(new int[] {7,1,5,3,6,4});
+        System.out.println(new T121().maxProfit(new int[] {7,6,4,3,1}));;
     }
 }
