@@ -1,7 +1,6 @@
 package byteDance;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 /**
  * @Author: zlatanlong

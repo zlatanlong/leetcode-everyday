@@ -1,7 +1,5 @@
 package jzoffer.jz04;
 
-import java.util.Scanner;
-
 /**
  * @Author: zlatanlong
  * @Date: 2020/10/3 12:56

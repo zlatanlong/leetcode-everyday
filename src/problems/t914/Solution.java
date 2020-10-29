@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 public class Solution {
     public boolean hasGroupsSizeX(int[] deck) {
-        int zu = 0;
         int length = deck.length;
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < length; i++) {

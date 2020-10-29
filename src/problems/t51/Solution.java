@@ -59,7 +59,6 @@ public class Solution {
     }
 
     private boolean isDiagonalAttack(List<Integer> currentQueen, int i) {
-        // TODO Auto-generated method stub
         int current_row = currentQueen.size();
         int current_col = i;
         //判断每一行的皇后的情况

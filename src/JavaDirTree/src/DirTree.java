@@ -54,5 +54,6 @@ public class DirTree {
         System.out.println(filePath);
         System.out.println(".");
         dirTree.getDir(filePath);
+        sc.close();
     }
 }
