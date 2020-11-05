@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - T15",
+      "request": "launch",
+      "mainClass": "hot100.T15",
+      "projectName": "leetcode-everyday_16aa85b0"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - T332",
       "request": "launch",
       "mainClass": "JavaDevelopmentClassTest.T332",
