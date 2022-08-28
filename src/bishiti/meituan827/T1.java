@@ -1,4 +1,4 @@
-package meituan827;
+package bishiti.meituan827;
 
 import java.util.Scanner;
 
