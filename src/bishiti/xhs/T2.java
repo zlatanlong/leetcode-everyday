@@ -1,4 +1,4 @@
-package xhs;
+package bishiti.xhs;
 
 import java.util.Scanner;
 
