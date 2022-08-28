@@ -1,5 +1,7 @@
 package byteDance;
 
+import util.ListNode;
+
 /**
  * @Author: zlatanlong
  * @Date: 2020/10/2 15:53

@@ -28,8 +28,7 @@ public class ListNode {
         return dum.next;
     }
 
-    @Override
-    public String toString() {
+    public void print() {
         StringBuilder builder = new StringBuilder();
         builder.append("[");
         ListNode cur = this;
@@ -39,7 +38,14 @@ public class ListNode {
         }
         builder.append(cur.val);
         builder.append("]");
-        return builder.toString();
+        System.out.println(builder.toString());
     }
 
+    @Override
+    public String toString() {
+        return "ListNode{" +
+                "val=" + val +
+                ", next=" + next +
+                '}';
+    }
 }
