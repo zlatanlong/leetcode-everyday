@@ -1,9 +1,40 @@
+package bishiti.xhs;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 
 public class T3 {
+
+    public void test() {
+        int n = 10;
+        int[][] graph = new int[n][n];
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            inner:
+            for (int j = i+1; j < n; j++) {
+                count++;
+                if (graph[i][j] == 1) {
+                    for (int k = 0; k < n; k++) {
+                        graph[i][k] = 0;
+                        graph[j][k] = 0;
+                    }
+                    break inner;
+                }
+            }
+        }
+    }
+
+    public void test2() {
+        int n = 10;
+        int[][] graph = new int[n][n];
+        int count = 0;
+        while (true) {
+
+        }
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s1 = scanner.nextLine();
