@@ -64,8 +64,8 @@ class SortOddEvenList {
     }
 
     public static void main(String[] args) {
-        ListNode l1 = ListNode.build(new int[]{1, 8, 5, 6, 9, 4, 13, 2});
-        System.out.println(new SortOddEvenList().sortListNode(l1));
+//        ListNode l1 = ListNode.build(new int[]{1, 8, 5, 6, 9, 4, 13, 2});
+//        System.out.println(new SortOddEvenList().sortListNode(l1));
     }
 
 }

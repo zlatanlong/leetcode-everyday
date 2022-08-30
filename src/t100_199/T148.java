@@ -44,9 +44,9 @@ public class T148 {
     }
 
     public static void main(String[] args) {
-        ListNode node1 = ListNode.build(new int[]{1, 3, 5, 7, 2, 4, 6, 7});
-        ListNode node2 = ListNode.build(new int[]{2, 4, 6, 8, 10});
-        ListNode merge = new T148().sortList(node1);
-        merge.print();
+//        ListNode node1 = ListNode.build(new int[]{1, 3, 5, 7, 2, 4, 6, 7});
+//        ListNode node2 = ListNode.build(new int[]{2, 4, 6, 8, 10});
+//        ListNode merge = new T148().sortList(node1);
+//        merge.print();
     }
 }
