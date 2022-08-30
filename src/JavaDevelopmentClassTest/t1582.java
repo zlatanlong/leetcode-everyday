@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class T1582 {
+class T1582 {
 
     public int numSpecial(int[][] mat) {
         // -1 empty

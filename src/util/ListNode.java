@@ -55,6 +55,10 @@ public class ListNode {
         System.out.println();
     }
 
+    public static ListNode build(int[] vals){
+        return new ListNode(vals);
+    }
+
     @Override
     public String toString() {
         return val + " - " + super.toString();
