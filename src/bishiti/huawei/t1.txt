@@ -1,0 +1,54 @@
+#include <bits/stdc++.h>
+using namespace std;
+// we have defined the necessary header files here for this problem.
+// If additional header files are needed in your program, please import here.
+string trans(string &s) {
+    string res;
+    for(auto c:s) {
+        if(c>='A' && c<='Z') {
+            res += c-'A'+'a';
+        } else {
+            res+=c;
+        }
+    }
+    return res;
+}
+int main()
+{
+    // please define the C++ input here. For example: int a,b; cin>>a>>b;;
+    // please finish the function body here.
+    // please define the C++ output here. For example:cout<<____<<endl;
+    string line1, line2;
+    getline(cin, line1);
+    getline(cin, line2);
+    stringstream ss2(line2);
+    map<string, int> id;
+    int ind = 0;
+    string tmp;
+    while(getline(ss2,tmp,' ')) {
+        if(!tmp.empty()) {
+            string res = trans(tmp);
+            id[res] = ind++;
+        }
+    }
+    string ans;
+    tmp.clear();
+    int flag = 0;
+    for(auto c: line1) {
+        if(c>='A' && c<= 'Z' || c>='a' && c<= 'z') {
+            tmp+=c;
+        } else {
+            string res = trans(tmp);
+            if(flag==0 && id.count(res)) {
+                tmp = to_string(id[res]);
+            }
+            ans+=tmp+c;
+            tmp.clear();
+        }
+        if(c=='"') {
+            flag ^=1;
+        }
+    }
+    cout << ans;
+    return 0;
+}
