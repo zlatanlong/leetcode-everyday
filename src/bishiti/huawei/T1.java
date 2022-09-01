@@ -14,14 +14,18 @@ public class T1 {
         Scanner scanner = new Scanner(System.in);
         String s1 = scanner.nextLine();
         String s2 = scanner.nextLine();
-//        String[] partten = scanner.nextLine().split("\\s");
         HashMap<String, Integer> indexMap = new HashMap<>();
         // 构建 index map
         StringBuilder tmp = new StringBuilder();
         int idx = 0;
         for (int i = 0; i < s2.length(); i++) {
+
             if (s2.charAt(i) != ' ') {
-                tmp.append(s2.charAt(i) - 'A' + 'a');
+                if (s2.charAt(i) >= 'A' && s2.charAt(i) <= 'Z') {
+                    tmp.append((char) (s2.charAt(i) - 'A' + 'a'));
+                } else {
+                    tmp.append(s2.charAt(i));
+                }
             } else {
                 indexMap.put(tmp.toString(), idx++);
                 tmp = new StringBuilder();
