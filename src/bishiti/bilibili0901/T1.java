@@ -26,6 +26,13 @@ public class T1 {
         }
     }
 
+    /**
+     * 思想：首先要解决怎样分解和才最小，对于任何大于2的自然数a, b, 则1/a + 1/b < 1/2 + 1/2 = 1.
+     * 所以a + b < ab。所以对于N的任何一个因子m, 若m=ab，
+     * 由于m>a+b，所以应该将m分解成a和b。所以和最小的情况是将N分解成所有的素数乘积。
+     * @param n
+     * @return
+     */
     public int minSum(int n) {
         if (1 == n || 2 == n) return n;
         for (int i = 2; i <= n / 2; i++) {
@@ -43,7 +50,7 @@ public class T1 {
 
         T1 t1 = new T1();
         t1.dfs(1, n, new int[n], 1);
-        System.out.println(t1.minSum(n));
+        System.out.println(t1.ans);
 
     }
 }
