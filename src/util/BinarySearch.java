@@ -3,27 +3,25 @@ package util;
 public class BinarySearch {
 
 
-    public static int left(int[] nums, int tar) {
-        int l = 0, r = nums.length - 1;
+    /**
+     * @param x
+     * int m = (l + r + 1) >>> 1; 向上取整 l=m, r=m-1
+     * int m = (l + r) >>> 1; 向下取整， l=m+1, r=m
+     * 举例 当 l=2 r=3时 向下取整 m=2 此时 l=m将陷入循环 所以l=m+1
+     *     当 l=2 r=3时 向上取整 m=3 此时 r=m将陷入循环 所以r=m-1
+     * @return
+     */
+    public int mySqrt(int x) {
+        int l = 0, r = x;
         while (l < r) {
-            int m = (l + r) >>> 1;
-            if (tar >= nums[m])
-                l = m + 1;
-            else {
-                r = m;
+            int m = (l + r + 1) >>> 1;
+            if ((long) m * m == x) return m;
+            if ((long) m * m < x) {
+                l = m;
+            } else {
+                r = m - 1;
             }
         }
-
-        return r;
-    }
-
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{1, 3, 5, 7, 9};
-
-        int i = BinarySearch.left(nums, 0);
-        System.out.println(nums[i]);
-
-
+        return l;
     }
 }
