@@ -9,7 +9,7 @@ public class T468 {
     public String validIPAddress(String queryIP) {
         for (int i = 0; i < queryIP.toCharArray().length; i++) {
             if (queryIP.charAt(i) == '.') return getIpv4(queryIP);
-            if (queryIP.charAt(i) == ':') return getIpv6(queryIP);
+//            if (queryIP.charAt(i) == ':') return getIpv6(queryIP);
         }
         return NEITHER;
     }
