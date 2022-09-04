@@ -1,0 +1,19 @@
+from collections import Counter
+
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int, input().split()))
+    a.sort()
+    if a[0]< -1 or a[-1]>1:
+        print("NO")
+        continue
+    c = Counter(a)
+
+    if 0 not in c:
+        print("NO")
+        continue
+    c.pop(0)
+    if c and max(c.values()) > 1:
+        print("NO")
+    else:
+        print("YES")
