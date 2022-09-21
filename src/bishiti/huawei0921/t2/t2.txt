@@ -1,0 +1,19 @@
+bgp 300
+ area 3
+  ip route 3.1.1.1 32 10.0.0.1
+  ip route 3.1.1.2 32 10.0.0.1
+  ip route 3.1.1.3 32 10.0.0.1
+bgp 1000
+ area 5
+  ip route 2.1.1.3 32 10.0.0.1
+  ip route 2.1.1.1 32 10.0.0.1
+  ip route 2.1.1.2 32 10.0.0.1
+ area 10
+  ip route 1.1.1.3 32 10.0.0.1
+  ip route 1.1.1.2 32 10.0.0.1
+  ip route 1.1.1.1 32 10.0.0.1
+#
+bgp
+ area
+  ip route
+#
